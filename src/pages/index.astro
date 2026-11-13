@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,13 +9,13 @@
 <title>PermaFrost — Marine Air Conditioning &amp; Refrigeration</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <header>
 <a class="brand" href="#home" aria-label="PermaFrost home">
 <span class="logo-crop">
-<img src="assets/logo.png" alt="PermaFrost Marine Services N.V. — Air conditioning and refrigeration">
+<img src="/assets/logo.png" alt="PermaFrost Marine Services N.V. — Air conditioning and refrigeration">
 </span>
 </a>
 <nav aria-label="Main navigation">
@@ -27,7 +29,7 @@
 </header>
 <main>
 <section class="hero" id="home">
-<img class="hero-image" src="assets/hero.jpg" alt="Luxury superyacht on clear turquoise Caribbean water">
+<img class="hero-image" src="/assets/hero.jpg" alt="Luxury superyacht on clear turquoise Caribbean water">
 <div class="hero-shade">
 </div>
 <div class="hero-content">
@@ -122,7 +124,7 @@
 </section>
 <section class="about" id="about">
 <div class="about-photo reveal">
-<img src="assets/hero.jpg" alt="Superyacht enjoying Caribbean waters" loading="lazy">
+<img src="/assets/hero.jpg" alt="Superyacht enjoying Caribbean waters" loading="lazy">
 <span class="photo-label">BUILT ON TRUST. SINCE 1992.</span>
 </div>
 <div class="about-copy reveal">
@@ -153,7 +155,7 @@
 <article class="product-card reveal">
 <div class="product-img">
 <span>01 / REFRIGERATION</span>
-<img src="assets/frigoboat.jpg" alt="Frigoboat marine refrigeration equipment" loading="lazy">
+<img src="/assets/frigoboat.jpg" alt="Frigoboat marine refrigeration equipment" loading="lazy">
 </div>
 <p class="eyebrow">FRIGOBOAT</p>
 <h3>Cooling built for life afloat.</h3>
@@ -164,7 +166,7 @@
 <article class="product-card reveal">
 <div class="product-img">
 <span>02 / REFRIGERATION</span>
-<img src="assets/isotherm.jpg" alt="Isotherm marine refrigerator" loading="lazy">
+<img src="/assets/isotherm.jpg" alt="Isotherm marine refrigerator" loading="lazy">
 </div>
 <p class="eyebrow">ISOTHERM</p>
 <h3>More comfort in your galley.</h3>
@@ -175,7 +177,7 @@
 <article class="product-card reveal">
 <div class="product-img">
 <span>03 / REFRIGERATION</span>
-<img src="assets/sea-frost.jpg" alt="Sea Frost refrigeration equipment" loading="lazy">
+<img src="/assets/sea-frost.jpg" alt="Sea Frost refrigeration equipment" loading="lazy">
 </div>
 <p class="eyebrow">SEA FROST</p>
 <h3>Keep your provisions ready.</h3>
@@ -199,7 +201,7 @@
 <div class="reference-grid">
 <figure class="reference-reveal from-left">
 <div>
-<img src="assets/blue-moon-hd.jpg" alt="Blue Moon yacht from PermaFrost’s references" loading="lazy">
+<img src="/assets/blue-moon-hd.jpg" alt="Blue Moon yacht from PermaFrost’s references" loading="lazy">
 </div>
 <figcaption>
 <h3>Blue Moon</h3>
@@ -208,7 +210,7 @@
 </figure>
 <figure class="reference-reveal from-left">
 <div>
-<img src="assets/limitless-hd.jpg" alt="Limitless yacht from PermaFrost’s references" loading="lazy">
+<img src="/assets/limitless-hd.jpg" alt="Limitless yacht from PermaFrost’s references" loading="lazy">
 </div>
 <figcaption>
 <h3>Limitless</h3>
@@ -217,7 +219,7 @@
 </figure>
 <figure class="reference-reveal from-left">
 <div>
-<img src="assets/venus-hd.jpg" alt="Venus yacht from PermaFrost’s references" loading="lazy">
+<img src="/assets/venus-hd.jpg" alt="Venus yacht from PermaFrost’s references" loading="lazy">
 </div>
 <figcaption>
 <h3>Venus</h3>
@@ -226,7 +228,7 @@
 </figure>
 <figure class="reference-reveal from-left">
 <div>
-<img src="assets/lady-lara-hd.jpg" alt="Lady Lara yacht from PermaFrost’s references" loading="lazy">
+<img src="/assets/lady-lara-hd.jpg" alt="Lady Lara yacht from PermaFrost’s references" loading="lazy">
 </div>
 <figcaption>
 <h3>Lady Lara</h3>
@@ -235,7 +237,7 @@
 </figure>
 <figure class="reference-reveal from-left">
 <div>
-<img src="assets/parsifal-hd.jpg" alt="Parsifal III sailing yacht from PermaFrost’s references" loading="lazy">
+<img src="/assets/parsifal-hd.jpg" alt="Parsifal III sailing yacht from PermaFrost’s references" loading="lazy">
 </div>
 <figcaption>
 <h3>Parsifal III</h3>
@@ -320,8 +322,8 @@
 </footer>
 <div id="toast" role="status">
 </div>
-<script>const referenceSection=document.querySelector('.references'),referenceCards=[...document.querySelectorAll('.reference-reveal')],referenceDots=[...document.querySelectorAll('.reference-progress span')];let referenceIndex=-1;function updateReferences(){if(!referenceSection||!referenceCards.length)return;const rect=referenceSection.getBoundingClientRect(),travel=Math.max(1,referenceSection.offsetHeight-innerHeight),progress=Math.min(1,Math.max(0,-rect.top/travel)),next=Math.min(referenceCards.length-1,Math.floor(progress*referenceCards.length));if(next===referenceIndex)return;referenceIndex=next;referenceCards.forEach((card,index)=>{card.classList.toggle('is-active',index===next);card.classList.toggle('is-past',index<next)});referenceDots.forEach((dot,index)=>dot.classList.toggle('is-active',index===next))}addEventListener('scroll',updateReferences,{passive:true});addEventListener('resize',updateReferences);updateReferences();</script>
-<script src="script.js">
+<script is:inline>const referenceSection=document.querySelector('.references'),referenceCards=[...document.querySelectorAll('.reference-reveal')],referenceDots=[...document.querySelectorAll('.reference-progress span')];let referenceIndex=-1;function updateReferences(){if(!referenceSection||!referenceCards.length)return;const rect=referenceSection.getBoundingClientRect(),travel=Math.max(1,referenceSection.offsetHeight-innerHeight),progress=Math.min(1,Math.max(0,-rect.top/travel)),next=Math.min(referenceCards.length-1,Math.floor(progress*referenceCards.length));if(next===referenceIndex)return;referenceIndex=next;referenceCards.forEach((card,index)=>{card.classList.toggle('is-active',index===next);card.classList.toggle('is-past',index<next)});referenceDots.forEach((dot,index)=>dot.classList.toggle('is-active',index===next))}addEventListener('scroll',updateReferences,{passive:true});addEventListener('resize',updateReferences);updateReferences();</script>
+<script is:inline src="/script.js">
 </script>
 </body>
 </html>
