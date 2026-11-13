@@ -157,8 +157,3 @@ footer{min-height:0;padding:50px 5% 25px;display:block;background:#0b3455}
 .footer-wordmark>span{font-size:20px;letter-spacing:0;vertical-align:top;display:inline-block;margin:12px 0 0 8px;color:#83b6d3}
 @media(max-width:700px){footer{min-height:0;padding:40px 5% 24px}.footer-wordmark{font-size:14.2vw;letter-spacing:-.8vw;line-height:1;margin:38px 0 22px}.footer-wordmark b{letter-spacing:-.9vw}.footer-wordmark>span{font-size:7px;margin:2px 0 0 3px}}
 
-/* Persistent call-to-action header */
-header{position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(7,59,112,.08)}
-.nav-contact span{font-size:9px;letter-spacing:1.3px;margin-right:8px;color:#667b88}
-@media(max-width:1000px){.nav-contact{display:block;padding:12px 14px;font-size:11px;white-space:nowrap}.nav-contact span{display:block;font-size:7px;margin:0 0 3px}}
-@media(max-width:700px){header{gap:8px;padding:0 4%}.brand .logo-crop{width:145px;height:52px}.brand .logo-crop img{width:225px;left:-55px;top:0}.nav-contact{margin-left:auto;padding:9px 10px;font-size:9px}.nav-contact span{font-size:6px;letter-spacing:.8px}#menu{padding:9px 10px}}
